@@ -1,0 +1,48 @@
+.aassistance-img{
+    margin-top: -40px;
+  }
+/* .card-para{
+    margin-top: -50px;
+    font-family: sans-serif;
+} */
+.Discussion-img{
+    padding-left: 55px;
+}
+/* .card-header{
+    padding-top: 20px;
+} */
+
+.card1, .card2{
+    padding: 8px 10px 0px 10px;
+}
+.card2{
+    margin-top: 10px;
+}
+
+
+
+
+
+
+.hover {
+    --c: #ff68de94; /* the color */
+    
+    color: #0000;
+    background: 
+      linear-gradient(90deg,#fff 50%,var(--c) 0) calc(100% - var(--_p,0%))/200% 100%,
+      linear-gradient(var(--c) 0 0) 0% 100%/var(--_p,0%) 100% no-repeat;
+    -webkit-background-clip: padding-box,text;
+            background-clip: padding-box,text;
+    transition: 0.5s;
+  }
+  .hover:hover {
+    --_p: 100%
+  }
+  
+  h6 {
+    font-family: system-ui, sans-serif;
+    font-size: 3rem;
+    margin:0;
+    cursor: pointer;
+    padding: 0 .1em;
+  }
