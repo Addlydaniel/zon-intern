@@ -1,0 +1,250 @@
+.banner-researchwriting{
+    width: 100%;
+    height: 100vh;
+}
+
+/* <!-- reaserch writing --> */
+.heading-researchwriting{
+    text-align: center;
+  
+    margin-left: 20%;
+    margin-right: 20%;
+    font-family: sans-serif;
+    color:purple;
+    font-weight: 400;
+    margin-top: 50px;
+}
+.aim{
+    margin-top: 80px;
+}
+.icon-researchwriting{
+    transition: transform .2s;
+}
+.icon-researchwriting:hover{
+
+
+-ms-transform: scale(1.2); /* IE 9 */
+  -webkit-transform: scale(1.2); /* Safari 3-8 */
+  transform: scale(1.2); 
+}
+/* end research writing */
+
+/* <!-- start research writing content --> */
+.writing-content{
+    margin-top: 80px;
+}
+.writing-content img{
+    border-radius: 10px;
+    height: 400px;
+}
+.writing-content h5{
+    margin-top: 30px;
+    margin-left: 130px;
+    font-weight: 700;
+    font-family: sans-serif;
+    color: #ff1494;
+}
+.writing-content p{
+   
+    margin-left: 60px;
+    font-size: medium;
+    color: rgb(12, 11, 11);
+}
+
+/* <!-- end research writing content-->  */
+
+/* <!-- start stpes in research writing --> */
+.steps-researchwriting{
+margin-top: 100px;
+}
+.steps-researchwriting h5{
+    font-weight: 700;
+    font-family: sans-serif;
+    color: purple;
+}
+.steps-researchwriting h3{
+    margin-left: 30px;
+    font-weight: 800;
+}
+.accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 130%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+    margin-left: -30px;
+   padding-bottom: 10px;
+  
+   
+  }
+  
+  .active, .accordion:hover {
+    background-color: #ccc; 
+  }
+  .accoridian-panal{
+    padding: 0 18px;
+  display: none;
+  background-color: white;
+  overflow: hidden;
+  }
+/* <!-- end steps in research writing --> */
+
+/* <!-- start services provide --> */
+
+.servive-provide-container{
+    margin-top: 90px;
+}
+.serviveprovide-research{
+    display: flex;
+    flex-direction:row;
+}
+.serviveprovide-research img{
+    width: 50px;
+}
+.serviveprovide-research h4{
+    margin-top: 23px;
+    margin-left:5px;
+}
+.card{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.7), 0 6px 20px 0 rgba(0, 0, 0, 0.23);
+}
+
+.serviveprovide-para{
+    padding: 10px;
+}
+.serviveprovide-link{
+    text-align: center;
+    color: purple;
+    text-decoration: none;
+}
+.serviveprovide-research-row{
+    margin-top: 45px;
+}
+/* <!-- end services provide --> */
+
+/* <!-- start why work with us --> */
+
+.researchwriting-work{
+    margin-top: 10%;
+}
+.work-researchwriting-column2{
+margin-top: 3%;
+
+}
+.work-researchwriting-column2 h3{
+    margin-left: 20px; 
+    color: #ff1494;
+    font-family: sans-serif;
+    font-weight: 800;
+}
+.work-researchwriting-column2 i{
+    margin-left: 20px;
+    margin-top: 20px;
+}
+.work-para-research-writing p{
+margin-left: 20px;
+}
+.work-para-research-writing{
+    display: flex;
+    flex-direction: row;
+}
+.column-quidence-division{
+    display: flex;
+    flex-direction:column;
+}
+.work-researchwriting-img{
+    height: 500px;
+    width: 900px;
+}
+/* <!-- end why work with us --> */
+
+
+/* <!-- start tips of research writing --> */
+
+.tips-researchwriting{
+    display: flex;
+    flex-direction: column;
+    margin-left: 130px;
+    margin-top: -210px;
+}
+.tips-researchwriting h4{
+    font-family: sans-serif;
+    color: purple;
+}
+.steps-researchwriting h4{
+    font-family: sans-serif;
+    color: purple;
+}
+.tips-researchwriting-column h5{
+ height: 200px;
+  background-color: #e659a6;
+  text-align: center;
+  font-weight: 900;
+  font-size: 500%;
+  color: white;
+
+}
+.tips-researchwriting-column1 h5{
+    height: 200px;
+     background-color:rgb(176, 47, 176);
+     text-align: center;
+     font-weight: 900;
+     font-size: 500%;
+     color:white;
+   
+   }
+   .tips-researchwriting-column1 {
+    margin-left:10px;
+   }
+   .slideshow-container {
+  
+    position: relative;
+  
+  }
+  .slides-font{
+   margin-left: 50%;
+   font-size: 50px;
+  }
+  .slide-margin{
+    text-align: center;
+    font-weight: 500;
+  }
+  .slide-para{
+   margin-left: 20%;
+   margin-right: 20%;
+   margin-top: 10px;
+  }
+  /* Next & previous buttons */
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+  
+
+      /* <!-- end tips of research writing --> */
