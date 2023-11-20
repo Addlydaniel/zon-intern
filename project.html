@@ -28,6 +28,8 @@
 <link rel="stylesheet" href="assets/css/style.css">
 <link rel="stylesheet" href="assets/css/zonduo.css">
 <link rel="stylesheet" href="assets/css/responsive.css">
+<link rel="stylesheet" href="assets/css/project.css">
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
 <title>Our Web & App Projects - Zonduo</title>
 <link rel="icon" type="image/png" href="assets/img/logo_t.png">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
@@ -258,14 +260,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
 
     <div class="page-title-area">
-<div class="d-table">
-<div class="d-table-cell">
-<div class="container">
-<h1>Projects</h1>
-<div class="bar"></div>
-</div>
-</div>
-</div>
+
 <div class="shape1"><img src="assets/img/shape1.png" alt="shape"></div>
 <div class="shape2 rotateme"><img src="assets/img/shape2.svg" alt="shape"></div>
 <div class="shape3"><img src="assets/img/shape3.svg" alt="shape"></div>
@@ -277,101 +272,164 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 </div>
                                  <!-- .................Project blog start................... -->
 
-<div class="blog-area ptb-80">
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-12 col-md-12">
-        <div class="row">
-          <div class="col-lg-4 col-md-6">
-            <div class="single-blog-post">
-              <div class="blog-image">
-                <img src="assets/img/projects/Human-Fall-Detection.jpg" alt="Human Fall Detection">
-              </div>
-              <div class="blog-post-content">
-                <h3 style="text-align: center;"><a href="topics.html">Human Fall Detection</a></h3>
-                <span>by <a href="https://zonduo.com/">ZONDUO</a></span>
-                <p>Human fall detection is a critical area of research in the field of healthcare and assistive technologies. Accurate and timely detection of falls is crucial for ensuring the well-being and safety of individuals, particularly the elderly and those with mobility impairments.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6">
-            <div class="single-blog-post">
-              <div class="blog-image">
-                <img src="assets/img/projects/Abnormal-Detection.jpg" alt="Abnormal Detection">
-              </div>
-              <div class="blog-post-content">
-                <h3 style="text-align: center;"><a href="topics.html">Abnormal Detection</a></h3>
-                <span>by <a href="https://zonduo.com/">ZONDUO</a></span>
-                <p>Abnormal detection, also known as anomaly detection, plays a crucial role in various domains, including cybersecurity, industrial monitoring, and healthcare. Detecting abnormal events or behaviors that deviate from expected patterns is essential for identifying potential threats, system failures, or critical health conditions.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6">
-            <div class="single-blog-post">
-              <div class="blog-image">
-                <img src="assets/img/projects/ECG-Signal.jpg" alt="Enhancement of ECG Signal">
-              </div>
-              <div class="blog-post-content">
-                <h3 style="text-align: center;"><a href="topics.html">Enhancement of ECG Signal</a></h3>
-                <span>by <a href="https://zonduo.com/">ZONDUO</a></span>
-                <p>The preprocessing of electrocardiogram (ECG) signals is a critical step in cardiac research and clinical practice. ECG signals are prone to various types of noise and artifacts that can obscure important cardiac information and affect diagnostic accuracy.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6">
-            <div class="single-blog-post">
-              <div class="blog-image">
-                <img src="assets/img/projects/Content-Based-Image-Retrieval.jpg" alt="Content-Based Image Retrieval Project">
-              </div>
-              <div class="blog-post-content">
-                <h3 style="text-align: center;"><a href="topics.html">Content-Based Image Retrieval</a></h3>
-                <span>by <a href="https://zonduo.com/">ZONDUO</a></span>
-                <p>Content-Based Image Retrieval (CBIR) is a prominent research area within the field of visual information retrieval. It focuses on developing techniques and algorithms to retrieve images from large databases based on their visual content rather than relying on textual descriptions.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6">
-            <div class="single-blog-post">
-              <div class="blog-image">
-                <img src="assets/img/projects/Glaucoma-Classification.jpg" alt="Glaucoma Classification Project">
-              </div>
-              <div class="blog-post-content">
-                <h3 style="text-align: center;"> <a href="topics.html">Glaucoma Classification</a></h3>
-                <span>by <a href="https://zonduo.com/">ZONDUO</a></span>
-                <p>Glaucoma is a chronic eye condition characterized by increased pressure within the eye, leading to damage to the optic nerve and potential loss of vision if left untreated. It is one of the leading causes of irreversible blindness worldwide.</p>
-              </div>
-            </div>
-          </div>
-        </div>
+
+
+                              
+
+                     <div class="section-title">
+                      <h2 >PROJECT</h2>
+                       <div class="bar"></div>
+                       </div>
+
+                          <!-- start project -->
+                          <div class="container-fluid ">
+                            <div class="row button-row">
+                              <div class="col-sm-4">
+                                <button class="button-project" onclick="showContent('content-1')">COMPLETED PROJECT</button>
+                              </div>
+                              <div class="col-sm-4">
+                                <button class="button-project" onclick="showContent('content-2')">  LIVE PROJECT</button>
+                              </div>
+                              <div class="col-sm-4">
+                                <button class="button-project" onclick="showContent('content-3')">     UPCOMING PROJECT</button>
+                              </div>
+                            </div>
+                              
+                                
+                            <div class="content">
+                            <div id="content-1" class="content-1 active">
+                              <div class="row">
+                                <div class="col-md-4 project-column">
+                                  <img src="./assets/img/projects/Human-Fall-Detection.jpg">
+                                  <h4>Human-Fall-Detection</h4>
+            <p>Human fall detection is a critical area of research in the filed of health care and assistive technology.Accurate and timely detection of falls in crucial of ensuring the well being and safety of individuals.Particularly the eldarly and those with mobility impairment</p>
+                                  
+                                </div>
+                                <div class="col-md-4 project-column">
+                                  <img src="./assets/img/projects/Abnormal-Detection.jpg">
+                                  <h4>Abnormal-Detection</h4>
+                                   <p>Abnormal detection,also known as anomaly detection plays a crucial role in various domains including cybersecurity,industrial monitoring and healthcare.Detecting abnormal events or behaviours that deviate from expected patterns is esseantial dor identifying potential threats,system failures or crucial health condition.</p>
+                                  
+                                </div>
+                                <div class="col-md-4 project-column">
+                                  <img src="./assets/img/projects/ECG-Signal.jpg">
+                                  <h4>Enhancement of ECG-Signal</h4>
+            <p>The Preprocessing of electrocardiogram(ECG) signals is a critical steps in cardiac research ans clinical practice ECG signals are prone to various types of noise and artifacts that can obsscure important cardiac information and effects diagnostic accuracy.</p>
+                                  
+                                </div>
+                              </div>
+
+                              <div class="row">
+                                <div class="col-md-4 project-column">
+                                  <img src="./assets/img/projects/Content-Based-Image-Retrieval.jpg">
+                                  <h4>Content-Based-Image-Retrieval</h4>
+            <p>Content-Based-Image-Retrieval(CBIR) is a prominent research area within the field of visual information retrival.It focuses on developing tecniques and algorithms to retreive images from large database based on their visual content rather than relying on textual description</p>
+                                  
+                                </div>
+                                <div class="col-md-4 project-column">
+                                  <img src="./assets/img/projects/Glaucoma-Classification.jpg">
+                                  <h4>Glaucoma Classification</h4>
+                                 <p>Glaucoma is a chronic eye condition characterized bys increased pressure within the eye, leading to damage to the optic nerve and potential loss of vision if left untreated .It is one of the leading causes of irreversible blidness worldwide</p>
+                                  
+                                </div>
+                              </div>
+                            </div>
+
+                            <div id="content-2" class="content-2 ">
+                              <div class="row">
+                                <div class="col-md-4 project-column">
+                                  <img src="./assets/img/projects/Human-Fall-Detection.jpg">
+                                  <h4>Human-Fall-Detection</h4>
+            <p>Human fall detection is a critical area of research in the filed of health care and assistive technology.Accurate and timely detection of falls in crucial of ensuring the well being and safety of individuals.Particularly the eldarly and those with mobility impairment</p>
+                                  
+                                </div>
+                                <div class="col-md-4 project-column">
+                                  <img src="./assets/img/projects/Abnormal-Detection.jpg">
+                                  <h4>Abnormal-Detection</h4>
+                                   <p>Abnormal detection,also known as anomaly detection plays a crucial role in various domains including cybersecurity,industrial monitoring and healthcare.Detecting abnormal events or behaviours that deviate from expected patterns is esseantial dor identifying potential threats,system failures or crucial health condition.</p>
+                                  
+                                </div>
+                                <div class="col-md-4 project-column">
+                                  <img src="./assets/img/projects/ECG-Signal.jpg">
+                                  <h4>Enhancement of ECG-Signal</h4>
+            <p>The Preprocessing of electrocardiogram(ECG) signals is a critical steps in cardiac research ans clinical practice ECG signals are prone to various types of noise and artifacts that can obsscure important cardiac information and effects diagnostic accuracy.</p>
+                                  
+                                </div>
+                              </div>
+
+                              
+                            </div>
+
+
+                            <div id="content-3" class="content-3">
+                              <div class="row">
+                                <div class="col-md-4 project-column">
+                                  <img src="./assets/img/projects/Human-Fall-Detection.jpg">
+                                  <h4>Human-Fall-Detection</h4>
+            <p>Human fall detection is a critical area of research in the filed of health care and assistive technology.Accurate and timely detection of falls in crucial of ensuring the well being and safety of individuals.Particularly the eldarly and those with mobility impairment</p>
+                                  
+                                </div>
+                                <div class="col-md-4 project-column">
+                                  <img src="./assets/img/projects/Abnormal-Detection.jpg">
+                                  <h4>Abnormal-Detection</h4>
+                                   <p>Abnormal detection,also known as anomaly detection plays a crucial role in various domains including cybersecurity,industrial monitoring and healthcare.Detecting abnormal events or behaviours that deviate from expected patterns is esseantial dor identifying potential threats,system failures or crucial health condition.</p>
+                                  
+                                </div>
+                                <div class="col-md-4 project-column">
+                                  <img src="./assets/img/projects/ECG-Signal.jpg">
+                                  <h4>Enhancement of ECG-Signal</h4>
+            <p>The Preprocessing of electrocardiogram(ECG) signals is a critical steps in cardiac research ans clinical practice ECG signals are prone to various types of noise and artifacts that can obsscure important cardiac information and effects diagnostic accuracy.</p>
+                                  
+                                </div>
+                              </div>
+
+                              <div class="row">
+                                <div class="col-md-4 project-column">
+                                  <img src="./assets/img/projects/Content-Based-Image-Retrieval.jpg">
+                                  <h4>Content-Based-Image-Retrieval</h4>
+            <p>Content-Based-Image-Retrieval(CBIR) is a prominent research area within the field of visual information retrival.It focuses on developing tecniques and algorithms to retreive images from large database based on their visual content rather than relying on textual description</p>
+                                  
+                                </div>
+                               
+                              </div>
+                            </div>
+                           
+                          </div>
+                        </div>
+                         
+                         
+<!-- end project                          -->
+
+<!-- start need more -->
+                       
+<div class="container project-container">
+  <div class="row">
+    <div class="col-md-12 needmore-column">
+      <h3>Need to know More ?</h3>
+      <p>Look into our <span class="zonduo-project">ZONDUO</span> to know in detail about our PhD writing which will be helpful to achieve your career.</p>
+      
+    </div>
+    <div class="row needmore-row">
+      <div class="col-md-4 services-project">
+        <h4>Know our services</h4>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+       <button class="project-button animated-button">Visit now</button>
+      </div>
+      <div class="col-md-4 services-project">
+        <h4>Visit Our Blog</h4>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+      <button class="project-button">  <a href="./blog.html">Visit now</a></button>
+      </div>
+      <div class="col-md-4 services-project">
+        <h4>We can Help</h4>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+        <button class="project-button">Contact us</button>
       </div>
     </div>
   </div>
 </div>
-
-                                              <!-- project blog ends -->
-
-                                               <!-- Ads starts -->
-
-</div>
-</div>
-</div>      
-                                      <!-- Ad ends -->
-             
-        <!--Start of Tawk.to Script-->
-<script type="text/javascript">
-var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-(function(){
-var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-s1.async=true;
-s1.src='https://embed.tawk.to/64464e1931ebfa0fe7fa0982/1gupa25s6';
-s1.charset='UTF-8';
-s1.setAttribute('crossorigin','*');
-s0.parentNode.insertBefore(s1,s0);
-})();
-</script>
-<!--End of Tawk.to Script-->
         
-
+<!-- end need more -->
 <footer class="footer-area bg-f7fafd">
 
  
@@ -519,6 +577,41 @@ $(document).ready(function () {
     });
 });
 </script>
+
+
+<!-- project -->
+<script>
+function showContent(contentId) {
+
+  document.querySelectorAll('.content').forEach(function (content) {
+    content.classList.remove('active');
+  });
+
+
+  document.getElementById(contentId).classList.add('active');
+
+  
+  if (contentId === 'content-1') {
+    document.getElementById('content-2').classList.remove('active');
+    document.getElementById('content-3').classList.remove('active');
+
+  } else if (contentId === 'content-2') {
+    document.getElementById('content-1').classList.remove('active');
+    document.getElementById('content-3').classList.remove('active');
+  } else if (contentId === 'content-3') {
+    document.getElementById('content-2').classList.remove('active');
+    document.getElementById('content-1').classList.remove('active');
+
+    
+  }
+}
+
+</script>
+
+
+
+<!-- 
+end project -->
 </body>
 
 
