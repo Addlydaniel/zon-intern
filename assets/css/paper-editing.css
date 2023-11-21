@@ -58,6 +58,9 @@
 .research-paper{
     font-size: 30px;
 }
+.research-paper1{
+    font-size: 30px;
+}
 .card4{
     background-color: rgba(248, 247, 248, 0.555);
     /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; */
@@ -119,6 +122,10 @@
     margin-left: 100px;
  }
 .heading-editing{
+    font-size: 35px;
+    text-align: center;
+}
+.heading-editing1{
     font-size: 35px;
     text-align: center;
 }
@@ -276,4 +283,29 @@
     stroke-dashoffset: 48;
     -webkit-transition: all 1.35s cubic-bezier(0.19, 1, 0.22, 1);
             transition: all 1.35s cubic-bezier(0.19, 1, 0.22, 1);
+  }
+  @media only screen and (max-width: 768px) {
+    .heading-editing{
+        text-align: center;
+        margin-left: -70px;
+    }
+    .padding{
+        margin-left: -70px;
+        margin-right: -70px;
+    }
+    .points{
+        margin-left: -100px;
+    }
+    .shadow{
+        margin-left: -30px;
+    }
+    .modi-img{
+        margin-bottom: 10px;
+    }
+    .research-paper1{
+        padding-top: 40px;
+    }
+    .research-paper2{
+        padding-top: 40px;
+    }
   }
