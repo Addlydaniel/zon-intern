@@ -39,14 +39,7 @@ padding-right: 60%;
 }
 
 
-/* .button-project:hover
-  {
-    background-image: linear-gradient(to right, #ed6ea0, #ec8c69, #f7186a , purple);
-box-shadow: 0 4px 15px 0 rgba(236, 116, 149, 0.75);
-}
-.button-project:focus {
-  outline: none;
-} */
+
 .button-project{
   width: 220px;
   height: 50px;
@@ -139,9 +132,39 @@ box-shadow: 0 4px 15px 0 rgba(236, 116, 149, 0.75);
   }  
   
 
+  /* mobile */
+  /* Your existing styles here */
+
+/* Media query for screens with a maximum width of 767px (typical for mobile devices) */
+@media only screen and (max-width: 767px) {
+  .projetcs-row {
+    margin-top: 5%;
+    padding-bottom: 3%;
+  }
+
+  
+
+  .project-column {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .project-column h4 {
+    margin-top: 3%;
+  }
+
+  .project-column img {
+    margin-top: -5%;
+  }
+}
+
+
+
+
+
   /* end project */
 
-
+/* start need more */
   .project-container{
   
     margin-top: 9%;
@@ -201,3 +224,55 @@ box-shadow: 0 4px 15px 0 rgba(236, 116, 149, 0.75);
   .needmore-row{
     margin-left: 3%;
   }
+
+  /* mobile */
+
+  
+@media only screen and (max-width: 767px) {
+  .project-container {
+      margin-top: 5%;
+      padding-bottom: 1%;
+  }
+
+  .needmore-column {
+      text-align: left;
+      margin-top: 2%;
+  }
+
+  .needmore-column p {
+      margin-left: 5%;
+      margin-right: 5%;
+  }
+
+  .needmore-column h3 {
+      font-size: 1.5em;
+  }
+
+  .zonduo-project {
+      font-size: 1.2em;
+  }
+
+  .services-project {
+      width: 100%;
+      margin-top: 3%;
+      margin-left: 0;
+      border-radius: 0;
+      padding-bottom: 2%;
+  }
+
+  .services-project h4 {
+      margin-top: 3%;
+      font-size: 1.2em;
+  }
+
+  .project-button {
+      padding: 3% 5%;
+      margin-top: 4%;
+  }
+
+  .needmore-row {
+      margin-left: 0;
+  }
+
+ 
+}

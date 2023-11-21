@@ -9,6 +9,22 @@
     margin-left: 8%;
     margin-top: 3%;
 }
+
+/* mobile */
+@media only screen and (max-width: 767px) {
+    .implementation-container h5 {
+        margin-top: 5%;
+        font-size: 1.5em; 
+    }
+
+    .implementation-container p {
+        margin-left: 4%;
+        margin-top: 2%;
+        font-size: 0.9em; 
+    }
+
+ 
+}
 /* start discussion on proposal idea */
 
 .discussion-heading{
@@ -21,6 +37,9 @@
     font-family: sans-serif;
 
 }
+
+/* end discussion on proposal idea  */
+
 .technical-implement{
 text-align: center;
 padding-top: 5%;
@@ -45,8 +64,14 @@ color: purple;
     color: #ff1494;
 }
 
+/* mobile */
+@media only screen and (max-width: 767px){
+.technic-img{
+    margin-left: 23%;
+}
+}
+/* technical implementation */
 
-/* end discussion on proposal idea  */
 
 /* <!-- start matlab --> */
 .matlab-container{
@@ -157,4 +182,25 @@ margin-top: -15px;
     margin-left: 10px;
     font-family: sans-serif;
 }
+
+
+/* mobile */
+@media only screen and (max-width: 767px) {
+    .ns2-implement {
+      width: 100%; /* Adjust width for smaller screens */
+      margin-left: 0; /* Remove left margin on smaller screens */
+    }
+  
+    .ns2-column,
+    .ns2-column1 {
+      margin-left: 0;
+      margin-top: 8%; /* Remove left margin on smaller screens */
+    }
+  
+    .circle {
+      margin-left: 0; /* Remove left margin on smaller screens */
+    }
+  
+    /* You can add more styles or override existing styles for smaller screens here */
+  }
 /* stop ns2 */

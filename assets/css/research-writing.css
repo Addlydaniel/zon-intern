@@ -76,6 +76,39 @@
     margin-left: 10%;
     margin-right: 10%;
 }
+
+/* mobile */
+
+@media only screen and (max-width: 767px) {
+    .stpes-img {
+        margin-left: 10px; 
+   
+        margin-top: 3%; 
+    }
+
+    .steps-row {
+        margin-top: 20px; 
+    }
+
+    .stpes-column {
+        border-radius: 15px; 
+        margin-left: 0.2%;
+     
+    }
+
+    .stpes-column h4 {
+        margin-left: 5%; 
+        margin-top: 4%; 
+    }
+
+    .stpes-column p {
+        margin-left: 5%; 
+        margin-right: 5%; 
+    }
+
+   
+}
+
 /* <!-- end steps in research writing --> */
 
 /* <!-- start services provide --> */
@@ -105,6 +138,59 @@
 
 .provide-column1,.provide-column2{
     margin-top:30%;  
+}
+
+
+/* mobile */
+@media only screen and (max-width: 767px) {
+    .servive-provide {
+        margin-top: 5%; 
+    }
+
+    .servive-provide h4 {
+        font-size: 1.2em; 
+    }
+
+    .service-img {
+        width: 100%; 
+        height: auto;
+        margin-top: 0; 
+    }
+
+    .service-column1 {
+        margin-top: 10%; 
+        margin-left: 5%; 
+    }
+
+    .service-column1 a,
+    .provide-column a,
+    .provide-column1 a,
+    .provide-column2 a {
+        font-size: 0.9em; 
+        color: #ff1494; 
+        font-weight: 700;
+    }
+
+    .provide-column1,
+    .provide-column2 {
+        margin-top: 20%;
+    }
+
+   
+}
+
+
+@media only screen and (max-width: 480px) {
+    .service-column1 {
+        margin-left: 2%;
+    }
+
+    .provide-column1,
+    .provide-column2 {
+        margin-top: 15%; 
+    }
+
+    
 }
 
 /* <!-- end services provide --> */
