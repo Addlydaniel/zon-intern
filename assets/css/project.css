@@ -1,18 +1,33 @@
+.project{
+  width: 100%;
+  height: 100%;
+  border-radius: 10%;
+}
+.our-project-column h3{
+  margin-top: 6%;
+  font-family: sans-serif;
+  font-weight: 700;
+  
+  color: #ff1494;
+}
 /* start project */
-.button-row{
-  margin-left: 10%;
+
+.projetcs-row{
+  margin-top: 10%;
+  background-color: rgb(226, 219, 219);
+   padding-bottom: 6%;
 }
 .button-project {
-  padding-left: 10%;
-  padding-right: 10%;
-  width: 200px;
-  font-size: 16px;
-  font-weight: 700;
-  color: purple;
+ padding-left: 40%;
+padding-right: 60%;
+
+ 
+  color: rgb(220, 27, 220);
   cursor: pointer;
-  margin: 20px;
-  height: 55px;
-  text-align:center;
+ font-family: sans-serif;
+ font-weight: 800;
+ text-align: right;
+ margin-top: 7%;
   border: none;
   background-size: 300% 100%;
 
@@ -76,7 +91,7 @@ box-shadow: 0 4px 15px 0 rgba(236, 116, 149, 0.75);
   position: absolute;
   width: 100%;
   height: 100%;
-  background-color: #e499b7;
+  background-color: #e197ac;
   left: 0;
   top: 0;
   border-radius: 10px;
@@ -128,7 +143,7 @@ box-shadow: 0 4px 15px 0 rgba(236, 116, 149, 0.75);
 
 
   .project-container{
-    /* background-color: rgb(226, 219, 219); */
+  
     margin-top: 9%;
     padding-bottom: 3%;
    
