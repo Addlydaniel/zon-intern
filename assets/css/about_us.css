@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
 :root {
-    --clr-main: #ff1497;
+    /* --clr-main: #ff1497; */
+    --clr-main: #ff75c1;
     --clr-mainlight: #ff75c1;
     --clr-lightblack:#626262;
     --clr-black:#000000;
@@ -24,6 +25,8 @@
 }
 
 .text-color_h {
+  letter-spacing: 1px;
+  word-spacing: 2px;
     color: var(--clr-main);
 }
 .text-color {
@@ -139,14 +142,19 @@
 
 /* what we do best */
 .section_card {
-  /* border: 1px solid; */
   width: 30%;
   text-align: center;
   justify-content: center;
   padding: 50px 20px;
-  /* border: 2px solid var(--clr-main); */
   box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
 }
+.section_card:hover {
+  background-color: var(--clr-lightblack);
+  color: rgb(255, 255, 255);
+  transform: scale(1.04);
+  transition: transform 0.5s ease;
+}
+
 
 .section_card img {
   padding: 5px 5px;
@@ -197,8 +205,222 @@
 }
 /* what we do best close*/
 
-/* team card */
+/* link_btn */
+.btns a{
+  margin: 0.5rem 0.5rem;
+}
+/* .button1 */
+.button1 {
+  color: var(--clr-main);
+  padding: 10px 20px;
+  border-radius: 10px;
+  border: 1px solid var(--clr-main);
+  letter-spacing: 0.1rem;
+  font-weight: 600;
+  transition:transform 0.3s ease-in-out;
+}
 
+.button1:hover {
+  color: var(--clr-dimwhite);
+  background-color: var(--clr-main);
+  transform: scale(1.05);
+}
+/* .button1 */
+
+/* button2 */
+.button2 {
+  background-color: var(--clr-main);
+  color: var(--clr-dimwhite);
+  padding: 10px 20px;
+  border-radius: 10px;
+  letter-spacing: 0.1rem;
+  font-weight: 600;
+  transition:transform 0.3s ease-in-out;
+}
+
+.button2:hover {
+  background-color: white;
+  color: var(--clr-main);
+  border: 1px solid var(--clr-main);
+  transform: scale(1.05);
+}
+/* button2 */
+
+/* botton2 */
+/* .button3 */
+.button3 {
+  color: var(--clr-main);
+  padding: 10px 20px;
+  border-top-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+  border: 1px solid var(--clr-main);
+  letter-spacing: 0.1rem;
+  font-weight: 600;
+  transition:transform 0.3s ease-in-out;
+}
+
+.button3:hover {
+  color: var(--clr-dimwhite);
+  background-color: var(--clr-main);
+  transform: scale(1.05);
+}
+/* .button3 */
+
+/* botton4 */
+.button4 {
+  background-color: var(--clr-main);
+  color: var(--clr-dimwhite);
+  border-top-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+  padding: 10px 20px;
+  letter-spacing: 0.1rem;
+  font-weight: 600;
+  transition:transform 0.3s ease-in-out;
+}
+
+.button4:hover {
+  background-color: white;
+  color: var(--clr-main);
+  border: 1px solid var(--clr-main);
+  transform: scale(1.05);
+}
+/* .button4 */
+
+.button5 {
+  background-color: #25D366;
+  color: var(--clr-dimwhite);
+  padding: 10px 20px;
+  border-radius: 10px;
+  letter-spacing: 0.1rem;
+  font-weight: 600;
+  transition:transform 0.3s ease-in-out;
+}
+
+.button5:hover {
+  background-color: white;
+  color: #25D366;
+  border: 1px solid #25D366;
+  transform: scale(1.05);
+}
+.button6 {
+  color: #25D366;
+  border: 1px solid #25D366;
+  padding: 10px 20px;
+  border-radius: 10px;
+  letter-spacing: 0.1rem;
+  font-weight: 600;
+  transition:transform 0.3s ease-in-out;
+}
+
+.button6:hover {
+  background-color: #25D366;
+  color: white;
+  transform: scale(1.05);
+}
+.button7 {
+  color: #25D366;
+  border: 1px solid #25D366;
+  padding: 10px 20px;
+  border-top-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+  letter-spacing: 0.1rem;
+  font-weight: 600;
+  transition:transform 0.3s ease-in-out;
+}
+
+.button7:hover {
+  background-color: #25D366;
+  color: white;
+  transform: scale(1.05);
+}
+.button8 {
+  background-color: #25D366;
+  color: white;
+  padding: 10px 20px;
+  border-top-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+  letter-spacing: 0.1rem;
+  font-weight: 600;
+  transition:transform 0.3s ease-in-out;
+}
+
+.button8:hover {
+  border: 1px solid #25D366;
+  background-color: white;
+  color: #25D366;
+  transform: scale(1.05);
+}
+
+.button9 {
+  background-color: #25D366;
+  color: white;
+  padding: 10px 20px;
+  border: 1px solid #25D366;
+  letter-spacing: 0.1rem;
+  font-weight: 600;
+  transition:transform 0.3s ease-in-out;
+}
+
+.button9:hover {
+  background-color: white;
+  color: #25D366;
+  border: 1px solid #25D366;
+  background-color: white;
+  transform: scale(1.05);
+}
+.button10 {
+  background-color: white;
+  color: #25D366;
+  padding: 10px 20px;
+  border: 1px solid #25D366;
+  letter-spacing: 0.1rem;
+  font-weight: 600;
+  transition:transform 0.3s ease-in-out;
+}
+
+.button10:hover {
+  background-color: #25D366;
+  color: white;
+  transform: scale(1.05);
+}
+.button11 {
+  background-color: white;
+  color: var(--clr-main);
+  padding: 10px 20px;
+  border: 1px solid var(--clr-main);
+  letter-spacing: 0.1rem;
+  font-weight: 600;
+  transition:transform 0.3s ease-in-out;
+}
+
+.button11:hover {
+  background-color: var(--clr-main);
+  color: white;
+  transform: scale(1.05);
+}
+
+.button12 {
+  background-color: var(--clr-main);
+  color: white;
+  padding: 10px 20px;
+  border: 1px solid var(--clr-main);
+  letter-spacing: 0.1rem;
+  font-weight: 600;
+  transition:transform 0.3s ease-in-out;
+}
+
+.button12:hover {
+  background-color: white;
+  color: var(--clr-main);
+  border: 1px solid var(--clr-main);
+  background-color: white;
+  transform: scale(1.05);
+}
+
+
+/* link_btn */
+
+/* team card */
 .employee-card {
   background-color: var(--clr-dimwhite);
   margin: 20px;
