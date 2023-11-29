@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
 :root {
     /* --clr-main: #ff1497; */
-    --clr-main: #ff75c1;
+    --clr-main: #ff1497;
     --clr-mainlight: #ff75c1;
     --clr-lightblack:#626262;
     --clr-black:#000000;
@@ -87,58 +87,6 @@
   }
 }
 /* our history */
-
-/* our vision */
-.about-text {
-  height: 25rem;
-  border-top: 15px solid var(--clr-main);
-  border-left: 1px solid var(--clr-main);
-  border-right: 1px solid var(--clr-main);
-  border-bottom: 1px solid var(--clr-main);
-  padding: 0 20px 10px 20px;
-  border-radius: 10px;
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
-}
-
-.our_vision {
-  width: 5rem;
-  padding: 1rem 1rem;
-  background: var(--clr-main);
-  border-radius: 50rem;
-}
-
-@media (max-width:992px) {
-  .about-text {
-    height: 35rem;
-}
-}
-@media (max-width:768px) {
-  .about-text {
-    height: 45rem;
-}
-}
-@media (max-width:576px) {
-  .about-text {
-    height: 45rem;
-}
-}
-@media (max-width:575px) {
-  .about-text {
-    height: 25rem;
-}
-}
-@media (max-width:425px) {
-  .about-text {
-    height: 30rem;
-}
-}
-@media (max-width:320px) {
-  .about-text {
-    height: 36rem;
-}
-}
-
-/* our vision close*/
 
 /* what we do best */
 .section_card {
@@ -666,3 +614,49 @@
 
 } */
 /* mobile view */
+
+
+/* our vision*/
+
+.objective {
+  padding: 1rem;
+  border-radius: 1rem;
+  border: 1px solid var(--clr-main);
+  border-top: 1rem solid var(--clr-main);
+  text-align: center;
+  height: 100%;
+}
+.objective-icons {
+  width: 6rem;
+  padding: 0.5rem;
+  border-radius: 5rem;
+  background-color: var(--clr-main);
+
+}
+
+@media (max-width: 767px) {
+  .objective {
+      margin-bottom: 1rem; /* Add margin between cards on small screens */
+  }
+}
+/* our vision close*/
+
+/* our vision */
+.about-text {
+  height: 100%;
+  border-top: 15px solid var(--clr-main);
+  border-left: 1px solid var(--clr-main);
+  border-right: 1px solid var(--clr-main);
+  border-bottom: 1px solid var(--clr-main);
+  padding: 0 20px 10px 20px;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+.our_vision {
+  width: 5rem;
+  padding: 1rem 1rem;
+  background: var(--clr-main);
+  border-radius: 50rem;
+}
+/* our vision close*/
