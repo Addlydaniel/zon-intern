@@ -616,31 +616,6 @@
 /* mobile view */
 
 
-/* our vision*/
-
-.objective {
-  padding: 1rem;
-  border-radius: 1rem;
-  border: 1px solid var(--clr-main);
-  border-top: 1rem solid var(--clr-main);
-  text-align: center;
-  height: 100%;
-}
-.objective-icons {
-  width: 6rem;
-  padding: 0.5rem;
-  border-radius: 5rem;
-  background-color: var(--clr-main);
-
-}
-
-@media (max-width: 767px) {
-  .objective {
-      margin-bottom: 1rem; /* Add margin between cards on small screens */
-  }
-}
-/* our vision close*/
-
 /* our vision */
 .about-text {
   height: 100%;
