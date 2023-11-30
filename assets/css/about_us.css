@@ -90,7 +90,7 @@
 
 /* what we do best */
 .section_card {
-  width: 30%;
+  height: 100%;
   text-align: center;
   justify-content: center;
   padding: 50px 20px;
@@ -134,21 +134,9 @@
 }
 
 /* mobile view */
-@media screen and (max-width:767px){
-  .section_title {
-    font-size: 15px;
-  }
-}
-@media screen and (max-width:425px){
+@media screen and (max-width:960px){
   .section_card {
-    padding: 40px 10px;
-  }
-  .section_title {
-    font-size: 13px;
-  }
-  .section_card img {
-    width: 40px;
-    height: 40px;
+    padding: 20px 20px;
   }
 }
 /* what we do best close*/
@@ -415,8 +403,7 @@
 /* timeline */
 .under_line {
   border-bottom: 4px solid rgb(0, 0, 0);
-  width: 400px;
-  margin-left: 22rem;
+  width: 40%;
 }
 
 .main-timeline{ font-family: 'Poppins', sans-serif; }
@@ -506,30 +493,12 @@
 .main-timeline .timeline:nth-child(4n+3) .title{ color: #FF7A5B; }
 .main-timeline .timeline:nth-child(4n+4) .timeline-content:before{ background-color: #FFA84B; }
 .main-timeline .timeline:nth-child(4n+4) .title{ color: #FFA84B; }
-@media screen and (max-width:1199.98px){
-  .under_line {
-    border-bottom: 4px solid rgb(0, 0, 0);
-    width: 400px;
-    margin-left: 16rem;
-  }
-}
-@media screen and (max-width:991.98px){
-  .under_line {
-    border-bottom: 4px solid rgb(0, 0, 0);
-    width: 400px;
-    margin-left: 9.5rem;
-  }
-}
+
 @media screen and (max-width:767px){
     .main-timeline .timeline,
     .main-timeline .timeline:nth-child(even){
         width: 100%;
         margin: 0 0 30px;
-    }
-    .under_line {
-      border-bottom: 4px solid rgb(0, 0, 0);
-      width: 350px;
-      margin-left: 5rem;
     }
 }
 @media screen and (max-width:576px){
@@ -557,35 +526,7 @@
         left: 50%;
         right: auto;
     }
-    .under_line {
-      border-bottom: 4px solid rgb(0, 0, 0);
-      width: 310px;
-      margin-left: 7rem;
-    }
 }
-
-@media screen and (max-width:500px){
-  .under_line {
-    border-bottom: 4px solid rgb(0, 0, 0);
-    width: 300px;
-    margin-left: 5rem;
-  }
-}
-@media screen and (max-width:425px){
-  .under_line {
-    border-bottom: 4px solid rgb(0, 0, 0);
-    width: 200px;
-    margin-left: 6.4rem;
-  }
-}
-@media screen and (max-width:320px){
-  .under_line {
-    border-bottom: 4px solid rgb(0, 0, 0);
-    width: 160px;
-    margin-left: 4.4rem;
-  }
-}
-
 /* timeline close */
 
 
