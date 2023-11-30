@@ -438,8 +438,170 @@ ul1 li .descr::before {
 }
 
 
+    .implementation {
+        background-color: #f7f0f0; /* Set your desired background color */
+        padding: 40px 0; /* Adjust the padding as needed */
+    }
+
+    .implement {
+        text-align: center;
+    }
+    .implementation h6{
+        font-size: 16px;
+    }
+
+    .implement span {
+        color: #ee00ff; /* Set your desired color for the span text */
+    }
+    .btn-implement {
+        margin: 1rem;
+        background-color: #ff00c8; /* Set your desired background color for the button */
+        border: 2px solid #ff00d9; /* Set your desired border style */
+        color: #fff; /* Set text color for the button */
+        padding: 10px;
+        animation: blink 1s infinite; /* Add the blinking animation */
+    }
+
+    .btn-implement:hover {
+        background: linear-gradient(to right, #302b2b, #ff00c8);
+        border-color: #0056b3; 
+        animation: none;
+    }
+
+    @keyframes blink {
+        0%, 79%, 100% {
+            opacity: 0;
+        }
+        50%, 99% {
+            opacity: 1;
+        }
+    }
+    .implement-inner {
+    border: 2px solid;
+    border-image: linear-gradient(to right, grey, red, blue, green, yellow);
+    padding: 2rem;
+}
+
+.journal-inner {
+        border: 2px solid;
+        border-image: linear-gradient(to right, grey, red, blue, green, yellow);
+        padding: 2rem;
+        text-align: center; /* Center text */
+    }
+
+    .journal-heading {
+        color: #333; /* Change text color */
+    }
+
+    .btn-journal {
+        background-color: #3498db; /* Change button background color */
+        color: #fff; /* Change button text color */
+        padding: 10px 20px; /* Adjust button padding */
+        text-decoration: none; /* Remove default button underline */
+        display: inline-block; /* Make the button inline */
+        margin-top: 10px; /* Add some top margin */
+    }
+
+    .btn-journal:hover {
+        background-color: #2980b9; /* Change button background color on hover */
+    }
 
 
+    .web-of-science {
+            background-color: #f4f4f4;
+            padding: 20px 0;
+        }
+
+        .web-of-science card {
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease-in-out;
+            background-color: #fff;
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+        }
+
+        .web-of-science card:hover {
+            transform: scale(1.05);
+        }
+
+        .web-of-science-inner {
+            padding: 20px;
+            flex-grow: 1;
+            text-align: center;
+        }
+
+        .web-heading {
+            color: #333;
+            font-size: 18px;
+            line-height: 1.5;
+        }
+
+        .web-heading span {
+            color: #007bff;
+        }
+
+        .btn-science {
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 14px;
+            cursor: pointer;
+            transition: background-color 0.3s ease-in-out;
+        }
+
+        .btn-science:hover {
+            background-color: #0056b3;
+        }
+
+        .book-cover {
+            width: 100%;
+            height: 200px;
+            background-image: url('book-cover-image.jpg'); /* Replace with your book cover image */
+            background-size: cover;
+            background-position: center;
+            margin-bottom: 15px;
+            border-top-left-radius: 8px;
+            border-top-right-radius: 8px;
+        }
+
+        .book-title {
+            font-size: 20px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .book-author {
+            font-size: 16px;
+            color: #777;
+            margin-bottom: 15px;
+        }
+
+        /* Add this CSS to your stylesheet */
+
+.btn1 {
+    position: relative;
+}
+
+.btn1 .btn-swipe {
+    background-color: #3498db; /* Initial background color */
+    color: #fff; /* Initial text color */
+    transition: all 0.3s ease-in-out; /* Adjust the transition duration and timing function as needed */
+}
+
+.btn1:hover .btn-swipe {
+    background-color: #2ecc71; /* Change to the desired background color on hover */
+    transform: translateX(50%); /* Adjust the distance of the sliding effect */
+}
+
+      
 </style>
 <body>
 <div class="phone-call cbh-phone cbh-green cbh-show  cbh-static" id="clbh_phone_div" style="">
@@ -1142,9 +1304,70 @@ ul1 li .descr::before {
                 </div>
             
         </div>
-    </div>          
-
+    </div>  
+</div>
     
+    
+    <div class="implementation">
+        <div class="container">
+            <div class="row align-items-center justify-content-center ptb-20">
+                
+                <div class="col-md-4 col-lg-5">
+                    <div class="implement-inner">
+                    <h6 class= " implement mb-3 mt-1 text-black font-weight-bold">
+                        Are you looking for the best publications services <span>Here is  your best</span>
+                        <a href="index.html">
+                            <button type="submit" name="submit" value="Submit" class="btn-implement">Get Started Now!</button>
+                        </a>
+                    </h6>
+                    </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+
+    <div class="journal">
+        <div class="container">
+            <div class="row align-items-center justify-content-center ptb-80">
+                <div class="col-md-6 col-lg-6">
+                    <div class="card">
+                        <div class="journal-inner">
+                            <h6 class="journal-heading mb-4 mt- text-black font-weight-bold">
+                                Are you looking for the best publications services <span>Here is your best</span>
+                                <a href="index.html">
+                                    <button type="submit" name="submit" value="Submit" class="btn-journal">Get Started Now!</button>
+                                </a>
+                            </h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+   <!-- New Card with Animation -->
+
+   <!-- button style -->
+   <div class="publication-btn">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-4 btn1 card">
+                <div class="card-pic-wrap">
+                    <!-- Add an image tag here if needed -->
+                    <button class="btn-swipe">Journal publications</button>
+                </div>
+            </div>
+
+            <div class="col-sm-4 btn2 card">
+                <div class="card-pic-wrap">
+                    <!-- Add an image tag here if needed -->
+                    <div class="btn-swipe">Thesis Writing</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
 
 
      <!--Start of Tawk.to Script-->
