@@ -194,6 +194,58 @@ strong {
             padding: 10px;
         }
     }
+
+    .reseach {
+    position: relative;
+    background-color: #f86e49;
+    padding: 30px;
+    border-radius: 25px;
+    overflow: hidden;
+}
+
+.reseach::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom right, transparent 49.5%, #f86e49 50%, transparent 50.5%);
+    z-index: -1;
+}
+
+.reseach h4 {
+    color: white;
+    font-size: 1.8em;
+    margin-bottom: 20px;
+    font-weight: 800;
+}
+
+.btn-reseach {
+
+    background-color: #f9f9f9;
+    color: #f86e49;
+    padding: 10px 40px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    animation: blink 1s infinite;
+}
+
+.btn-reseach:hover {
+    background-color: #0056b3;
+}
+
+@keyframes blink {
+    0%, 50%, 100% {
+        opacity: 0;
+    }
+    50%, 99% {
+        opacity: 1;
+    }
+}
+
+
 </style>
 
 
@@ -382,6 +434,23 @@ strong {
        <h5><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;  <b>-</b>&nbsp;\date{\today}</p></h5>
         <h5><p>This is a very basic preamble; it just sets up the document class (which determines the overall layout of the page), the title, author, and date. You can add more information to the preamble if you need to, but for now this will suffice.</p></h5>
         <h5><p>Once you've got the preamble set up, you can start writing the paper in the body of the document. To do this, just type out the content as usual; LaTeX will take care of all of the formatting for you.</p></h5>
+        <br>
+        <div class="reseach">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-sm-8 d-flex flex-column justify-content-center  ptb-20 ">
+                        <h4>Investigating premier Research-Paper services? </h4>
+                        
+                        
+                    </div>
+                    <div class="col-sm-4">
+                        <a href="annexure.html">
+                            <button class="btn-reseach btn-primary">Click Here </button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
         <br>
         
         <h3 class="theme"><strong>Document Formatting</strong></h3><br>
