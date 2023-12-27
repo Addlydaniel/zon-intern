@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Popup Test</title>
+    <style>
+        .popup-message {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 1000;
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px;
+            border-radius: 0 0 5px 5px;
+            box-shadow: 0px 3px 5px rgba(0,0,0,0.3);
+        }
+    </style>
+</head>
+<body>
+
+<div id="popupMessage" class="popup-message">Form Submitted Successfully!</div>
+<form>
+     Name: <input type="text" name="name"><br>
+     <button type="submit" onclick="showPopup(event)">Click Me</button> 
+</form>
+
+
+<script>
+    function showPopup(event) {
+        event.preventDefault(); // Prevent form submission
+
+        var popup = document.getElementById("popupMessage");
+        popup.style.display = "block";
+
+        setTimeout(function() {
+            popup.style.display = "none";
+        }, 3000); // Change this to 30000 if you want the popup to show for 30 seconds
+    }
+</script>
+
+</body>
+</html>
