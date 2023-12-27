@@ -278,7 +278,19 @@ font-size: 18px;
             background-color: #ffffff;
         }
 
-
+        .popup-message {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 1000;
+        background-color: #4CAF50;
+        color: white;
+        padding: 10px;
+        border-radius: 0 0 5px 5px;
+        box-shadow: 0px 3px 5px rgba(0,0,0,0.3);
+    }
 
 </style>
 <body>
@@ -570,30 +582,12 @@ font-size: 18px;
                   </div>
                   <div class="col-lg-12 col-md-6">
                     <div class="form-group">
-                      <select class="form-control" id="phd" name="phd">
-                        <option value="">To be published in which Quartile?</option>
-                      
-                      <option value="Q1">Q1</option>
-                      <option value="Q2">Q2</option>
-                      <option value="Q3">Q3</option>
-                      </select>
+                      <input type="text" name="department" id="department" class="form-control" required data-error="Please enter your Department" placeholder="Department">
                     </div>
                   </div>
                   <div class="col-lg-12 col-md-6">
                     <div class="form-group" id="assistance" name="assistance">
-                      <select class="form-control">
-                        <option value="">I Need assistance for</option>
-                        <option value="Technical Discussion">Technical Discussion</option>
-                        <option value="Topic Selection">Topic Selection</option>
-                        <option value="Implementation">Implementation</option>
-                        <option value="Research Paper Writing">Research Paper Writing</option>
-                        <option value="Research Paper Modification">Research Paper Modification</option>
-                        <option value="Synopsis">Synopsis</option>
-                        <option value="Thesis Writing">Thesis Writing</option>
-                        <option value="plagiarism-check/ Plagiarism Reduction">plagiarism-check/ Plagiarism Reduction</option>
-                        <option value="Journal Revision">Journal Revision</option>
-                        <option value="Proof Reading">Proof Reading</option>
-                      </select>
+                      <input type="text" name="domain" id="domain" class="form-control" required data-error="Please enter your Domain" placeholder="Domain">
                     </div>
                   </div>
                   <div class="col-lg-12 col-md-12">
@@ -603,6 +597,8 @@ font-size: 18px;
                   </div>
                 </div>
               </form>
+              <div id="popupMessage" class="popup-message">Suggested Journals has been sent to your mail id</div>
+
 </div>
 </div>
 
@@ -970,6 +966,20 @@ $(document).ready(function () {
     });
 });
 </script>
+
+<script>
+  function submitForm() {
+
+      setTimeout(function() {
+          var popup = document.getElementById("popupMessage");
+          popup.style.display = "block";
+          setTimeout(function() {
+              popup.style.display = "none";
+          }, 3000);
+      }, 1000);
+  }
+</script>
+
 </body>
 
 
