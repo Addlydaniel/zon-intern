@@ -21,14 +21,15 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
   $message .= "Email: $email\n";
   $message .= "Mobile Number: $phone\n";
 
+ // Send email
+ $headers = "From: $email";
+ mail($to, $subject, $message, $headers);
 
-  // Send email
-  if (mail($adminEmail, $subject, $message)) {
-    echo "Order submitted successfully.";
-    header("location: thankyou-page.html");
-  } else {
-    echo "Failed to submit order. Please try again.";
-    header("location: index.php");
-  }
+ // Display success message
+ echo "Form submitted successfully. Thank you!";
+} else {
+ // Redirect users if they try to access this page directly
+ header("Location: index.html"); // Replace with the actual name of your form HTML file
+ exit;
 }
 ?>

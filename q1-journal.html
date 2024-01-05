@@ -1,3 +1,4 @@
+
 <!doctype html>
 <html lang="en-US">
 <head>
@@ -277,6 +278,7 @@ font-size: 18px;
         .q1-btn:hover {
             background-color: #ffffff;
         }
+
         .overlay {
     display: none;
     position: fixed;
@@ -289,45 +291,8 @@ font-size: 18px;
     align-items: center;
     text-align: center;
     z-index: 1000;
-    transition: all 0.3s ease-in-out;
 }
 
-.popup {
-    background-color: #fff;
-    padding: 30px;
-    border-radius: 10px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
-    max-width: 500px;
-    margin: auto;
-    transition: transform 0.3s ease-in-out;
-    font-family: 'Arial', sans-serif;
-    color: #333;
-}
-
-.popup p {
-    font-size: 18px;
-    margin-bottom: 20px;
-    line-height: 1.6;
-}
-
-.popup button {
-    background-color: #4CAF50; /* Green */
-    border: none;
-    color: white;
-    padding: 10px 20px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    cursor: pointer;
-    border-radius: 5px;
-    transition: background-color 0.2s ease-in-out;
-}
-
-.popup button:hover {
-    background-color: #45a049;
-}
 
 
 </style>
@@ -600,7 +565,7 @@ font-size: 18px;
 <div class="col-lg-6 features-details-image">
   <div id="popupMessage" class="popup-message"></div>
 
-  <form action="q1-journal.php" method="POST" enctype="multipart/form-data" class="animated-form" onsubmit="handleFormSubmission(event)">
+  <form action="q1-journal.php" method="POST" enctype="multipart/form-data" class="animated-form">
       <div class="row">
           <div class="col-lg-12 col-md-12">
               <div class="form-group">
@@ -637,7 +602,7 @@ font-size: 18px;
 <!-- Success Popup -->
 <div class="overlay" id="successOverlay">
     <div class="popup">
-        <p> SUGGESTED JOURNALS has been send to your mail id.</p>
+        <p>Success! Your form has been submitted.</p>
         <button onclick="hideSuccessPopup()">OK</button>
     </div>
 </div>
@@ -1008,32 +973,38 @@ $(document).ready(function () {
 });
 </script>
 
-  <script>
-function handleFormSubmission(event) {
-    event.preventDefault(); // Prevent actual form submission
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+    var form = document.querySelector('.animated-form');
 
-    var form = event.target;
+    form.addEventListener('submit', function (event) {
+        event.preventDefault(); // Prevent the default form submission
 
-    // Here you can implement your form validation or submission via AJAX
+        // You can add client-side validation here if needed
 
-    // If form is valid and/or AJAX submission is successful
-    showSuccessPopup();
+        // Send the form data to the server using AJAX
+        var xhr = new XMLHttpRequest();
+        xhr.open('POST', 'q1-journal.php', true);
+        xhr.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
 
-    // Optionally reset the form
-     form.reset();
-}
+        xhr.onload = function () {
+            if (xhr.status == 200) {
+                // Display success message
+                alert('Your form has been submitted successfully.');
+                form.reset(); // Reset the form after successful submission
+            } else {
+                // Display an error message if something goes wrong
+                alert('Error submitting the form. Please try again later.');
+            }
+        };
 
-function showSuccessPopup() {
-    document.getElementById('successOverlay').style.display = 'flex';
-}
-
-function hideSuccessPopup() {
-    document.getElementById('successOverlay').style.display = 'none';
-}
-
-  
-
+        // Prepare form data for submission
+        var formData = new FormData(form);
+        xhr.send(formData);
+    });
+});
 </script>
+
 
 </body>
 
