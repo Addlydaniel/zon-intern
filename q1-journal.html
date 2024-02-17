@@ -563,8 +563,6 @@ font-size: 18px;
 </div>
 </div>
 <div class="col-lg-6 features-details-image">
-  <div id="popupMessage" class="popup-message"></div>
-
   <form action="q1-journal.php" method="POST" enctype="multipart/form-data" class="animated-form">
       <div class="row">
           <div class="col-lg-12 col-md-12">
@@ -599,16 +597,6 @@ font-size: 18px;
   </form>
 </div>
 </div>
-<!-- Success Popup -->
-<div class="overlay" id="successOverlay">
-    <div class="popup">
-        <p>Success! Your form has been submitted.</p>
-        <button onclick="hideSuccessPopup()">OK</button>
-    </div>
-</div>
-
-
-
 </div>
 </div>
 
@@ -638,6 +626,8 @@ font-size: 18px;
   
 </div>
     </div>
+
+
 
         <div class="features-details-area ptb-80">
         <div class="container">
@@ -810,6 +800,27 @@ font-size: 18px;
           </div>
           </div>
         </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-8">
+            <div class="card">
+                <div class="card-header">
+                  Quote
+                </div>
+                <div class="card-body">
+                  <blockquote class="blockquote mb-0">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+                    <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
+                  </blockquote>
+                </div>
+              </div>
+        </div>
+        </div>
+        </div>
+        
+
+        
         
         <!--Start of Tawk.to Script-->
 <script type="text/javascript">
@@ -976,29 +987,21 @@ $(document).ready(function () {
 <script>
 document.addEventListener('DOMContentLoaded', function () {
     var form = document.querySelector('.animated-form');
-
     form.addEventListener('submit', function (event) {
-        event.preventDefault(); // Prevent the default form submission
-
-        // You can add client-side validation here if needed
-
-        // Send the form data to the server using AJAX
+        event.preventDefault(); 
         var xhr = new XMLHttpRequest();
         xhr.open('POST', 'q1-journal.php', true);
         xhr.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
-
         xhr.onload = function () {
             if (xhr.status == 200) {
-                // Display success message
+                
                 alert('Your form has been submitted successfully.');
-                form.reset(); // Reset the form after successful submission
+                form.reset(); 
             } else {
-                // Display an error message if something goes wrong
+               
                 alert('Error submitting the form. Please try again later.');
             }
         };
-
-        // Prepare form data for submission
         var formData = new FormData(form);
         xhr.send(formData);
     });
